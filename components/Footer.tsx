@@ -1,20 +1,10 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
 import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
 import Image from 'next/image'
-
 const Footer = () => {
-  const [email, setEmail] = useState('')
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // TODO: Implement email signup logic
-    console.log('Email submitted:', email)
-    setEmail('')
-  }
-
   return (
     <footer className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-8 px-4 sm:px-6 lg:px-8 shadow-lg shadow-blue-500/50 z-10">
       <hr className="border-t border-white w-full my-10" />
